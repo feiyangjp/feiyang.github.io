@@ -1,0 +1,53 @@
+<!-- ✅ contact.html お問い合わせページ -->
+<!-- =========================== -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-ja="お問い合わせ" data-zh="联系我们">お問い合わせ | Feiyang.jp</title>
+  <meta name="description" content="メールフォームでのお問い合わせはこちらからどうぞ。">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/lang-toggle.js"></script>
+</head>
+<body>
+  <header style="background:#00aeff;padding:10px;">
+    <nav>
+      <ul style="display:flex;gap:20px;list-style:none;justify-content:center;">
+        <li><a href="index.html" data-ja="ホーム" data-zh="首页">ホーム</a></li>
+        <li><a href="services.html" data-ja="サービス" data-zh="服务">サービス</a></li>
+        <li><a href="about.html" data-ja="会社案内" data-zh="介绍">会社案内</a></li>
+        <li><a href="faq.html" data-ja="FAQ" data-zh="常见问题">FAQ</a></li>
+        <li><a href="contact.html" data-ja="お問い合わせ" data-zh="联系我们">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div style="text-align:center;margin-top:10px;">
+      <label for="lang-switch">言語：</label>
+      <select id="lang-switch">
+        <option value="ja">日本語</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+  </header>
+
+  <main style="padding:2em;">
+    <h2 data-ja="お問い合わせフォーム" data-zh="联系表单">お問い合わせフォーム</h2>
+    <form>
+      <label data-ja="お名前" data-zh="姓名">お名前:</label><br>
+      <input type="text" name="name"><br>
+
+      <label data-ja="メールアドレス" data-zh="电子邮箱">メールアドレス:</label><br>
+      <input type="email" name="email"><br>
+
+      <label data-ja="メッセージ" data-zh="留言内容">メッセージ:</label><br>
+      <textarea name="message"></textarea><br>
+
+      <button type="submit" data-ja="送信" data-zh="提交">送信</button>
+    </form>
+  </main>
+
+  <footer style="background:#e0f7ff;text-align:center;padding:10px;">
+    <p>&copy; 2025 Feiyang.jp | info@feiyang.jp</p>
+  </footer>
+</body>
+</html>
